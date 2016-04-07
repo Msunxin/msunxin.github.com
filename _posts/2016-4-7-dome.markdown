@@ -1,0 +1,41 @@
+---
+layout: post
+title: demo
+excerpt: demo ------------------------demo
+---
+There has been lots of buzz about many of the new features in PHP 5.4, like the traits support, the
+short array syntax and all those other syntax improvements.
+
+But one set of changes that I think is particularly important was largely overlooked: For PHP 5.4
+cataphract ([Artefacto][1] on StackOverflow) heroically rewrote large parts of `htmlspecialchars`
+thus fixing various quirks and adding some really nice new features.
+
+(The changes discussed here apply not only to [`htmlspecialchars`][2], but also to the related
+[`htmlentities`][3] and in parts to [`htmlspecialchars_decode`][4], [`html_entity_decode`][5] and
+[`get_html_translation_table`][6].)
+
+Here a quick summary of the most important changes:
+
+ * UTF-8 as the default charset
+ * Improved error handling (`ENT_SUBSTITUTE`)
+ * Doctype handling (`ENT_HTML401`, ...)
+
+UTF-8 as the default charset
+----------------------------
+
+contents
+-----------------------
+
+contents------contents
+
+{% highlight php startinline %}
+htmlspecialchars("<\x80The End\xef\xbf\xbf>", ENT_QUOTES | ENT_HTML5 | ENT_DISALLOWED | ENT_SUBSTITUTE, 'UTF-8');
+{% endhighlight %}
+
+  [1]: http://stackoverflow.com/users/127724/artefacto
+  [2]: http://docs.php.net/htmlspecialchars
+  [3]: http://docs.php.net/htmlentities
+  [4]: http://docs.php.net/htmlspecialchars_decode
+  [5]: http://docs.php.net/html_entity_decode
+  [6]: http://docs.php.net/get_html_translation_table
+  [7]: http://unicode.org/reports/tr36/#Deletion_of_Noncharacters
