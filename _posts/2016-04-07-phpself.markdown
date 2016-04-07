@@ -1,12 +1,9 @@
 ---
 layout: post
-title: php self parent and $this different
-excerpt: `$this->调用本类的方法属性 ，静态方法中不可以用$this 调用属性`
+title: PHP's self parent and  this  - difference
+excerpt: Cross-link to the third part of the "PHP's Source Code for PHP Developers" series, covering how PHP values are represented internally and used throughout the source code.
 ---
-*	$this->调用本类的方法属性 ，静态方法中不可以用$this 调用属性
-*	self::调用本类的静态属性方法
-*	parent:: 调用父类的成员属性方法
-----------------------------
+
 
 <?php
 /**
