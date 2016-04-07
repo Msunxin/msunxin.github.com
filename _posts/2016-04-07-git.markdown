@@ -4,19 +4,17 @@ title: git 命令
 excerpt: learning git
 ---
 
-git add .  |||  git add xx.php 增加文件到缓存区;
-git commit -m xxx     提交到本地仓库，xxx为注释;
-git reflog         查看提交消息，版本号;
-git reset --hard xxxx  还原到某个版本号;
+```
+git add .  |||  git add xx.php 增加文件到缓存区
+git commit -m xxx     提交到本地仓库，xxx为注释
+git reflog         查看提交消息，版本号
+git reset --hard xxxx  还原到某个版本号
 git push           提交到远程代码库;
 git branch   	   查看所有分支;
 git branch xxx     创建一个代码分支
 git checkout  master   切换到master主分支
-
 git merge xxx      合并xxx分支到当前分支
-
 git status 		查看当前状态
-
 git pull 		代码同步到本地
 git stash 		差异代码收到缓存区
 git stash pop           释放缓存区代码，合并
@@ -31,4 +29,4 @@ git tag -a <tagname> -m xxx   可以指定标签信息
 删除远程分支
 git branch -r -d origin/branch-name
 git push origin :branch-name
------------------------
+```
