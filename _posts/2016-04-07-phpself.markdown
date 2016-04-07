@@ -1,7 +1,7 @@
 ---
 layout: post
-title: demo
-excerpt: *	$this->调用本类的方法属性 ，静态方法中不可以用$this 调用属性
+title: php self parent and $this different
+excerpt: `$this->调用本类的方法属性 ，静态方法中不可以用$this 调用属性`
 ---
 *	$this->调用本类的方法属性 ，静态方法中不可以用$this 调用属性
 *	self::调用本类的静态属性方法
