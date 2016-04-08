@@ -4,6 +4,7 @@ title: git 命令
 excerpt: learning git
 ---
 
+#git速查
 ```
 git add .  |||  git add xx.php 增加文件到缓存区
 git commit -m xxx     提交到本地仓库，xxx为注释
@@ -29,4 +30,5 @@ git tag -a <tagname> -m xxx   可以指定标签信息
 删除远程分支
 git branch -r -d origin/branch-name
 git push origin :branch-name
+git  config --global credential.help store  git运行保存账号密码
 ```
