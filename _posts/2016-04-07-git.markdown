@@ -4,7 +4,9 @@ title: git 命令
 excerpt: learning git
 ---
 
-#git速查
+# git速查
+
+
 ```
 git add .  |||  git add xx.php 增加文件到缓存区
 git commit -m xxx     提交到本地仓库，xxx为注释
