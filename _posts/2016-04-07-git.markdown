@@ -33,4 +33,6 @@ git tag -a <tagname> -m xxx   可以指定标签信息
 git branch -r -d origin/branch-name
 git push origin :branch-name
 git  config --global credential.help store  git运行保存账号密码
+$ git config --global alias.co checkout    设置运行命令别名
+
 ```
