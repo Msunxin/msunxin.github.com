@@ -21,8 +21,8 @@ millisec 	必需。在执行代码前需等待的毫秒数。
 
 setTimeout()方法可以很好的帮我们执行锁住用户的操作，然后定时放开。
 
-`
 
+```
 $(".applyTx").live("click",function(){
 	$(".applyTx").attr("disabled",true);					//锁住用户点击
 	setTimeout("$('.applyTx').attr('disabled',false)",1000);  //一秒后释放
@@ -36,5 +36,5 @@ $(".applyTx").live("click",function(){
 					},'json');
 });
 
-`
+```
 
