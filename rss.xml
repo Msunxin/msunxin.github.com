@@ -4,10 +4,10 @@ layout: null
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sunxin's blog</title>
+    <title>sx's blog</title>
     <link>http://msunxin.github.com/</link>
     <atom:link href="http://msunxin.github.com/rss.xml" rel="self" type="application/rss+xml" />
-    <description>sunxin's blog about PHP</description>
+    <description>sx's blog about PHP</description>
     <language>ch-ch</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
