@@ -1,7 +1,7 @@
 ---
 layout: post
 title: php command
-excerpt: the design pettern of php
+excerpt: the design pattern of php
 ---
 
 
