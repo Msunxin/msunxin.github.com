@@ -35,4 +35,7 @@ git push origin :branch-name
 git  config --global credential.help store  git运行保存账号密码
 $ git config --global alias.co checkout    设置运行命令别名
 
+git reset --hard ORIGIN/BRANCH      #git 删除本地所有修改，还原成远程仓库的代码
+git reset --hard origin/master
+
 ```
