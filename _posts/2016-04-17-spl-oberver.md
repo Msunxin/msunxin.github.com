@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SPL快速实现oberver
+title: SPL快速实现observer
 excerpt: php SPL实现observer
 ---
 
