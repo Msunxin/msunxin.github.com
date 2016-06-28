@@ -7,7 +7,9 @@
 <script type="text/javascript" src="ZeroClipboard.js"></script>
 <body>
 text: <input type="text" name="text" value="copy ok!" id="text"/>
-<input type="submit" name="btn_copy" value="复制" id="btn_submit" />
+<div style="position:relative;display:inline-block;">
+  <input type="submit" name="btn_copy" value="复制" id="btn_submit" />
+</div>
 <script type="text/javascript">
 var clip = new ZeroClipboard.Client();
 clip.setHandCursor(true);
