@@ -7,16 +7,17 @@
 <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.1/jquery.js"></script>
 <script type="text/javascript" src="ZeroClipboard.js"></script>
 <body>
-text: <input type="text" name="text" value="copy ok!" id="text"/>
+text: <input type="text" name="text" value="copy ok!" id="code"/>
 <div style="position:relative;display:inline-block;">
-  <input type="submit" name="btn_copy" value="复制" id="btn_submit" />
+  <input type="submit" name="btn_copy" value="复制" id="copyBtn" />
 </div>
 <script type="text/javascript">
-var clip = new ZeroClipboard.Client();
-clip.setHandCursor(true);
-var text= document.getElementById('text').value;
-clip.setText(text);					
-clip.glue("btn_submit");
+$('#copyBtn').zclip({
+        path: "__JS__/copy/ZeroClipboard.swf",
+        copy: function(){
+            return $('#code').val();
+        }
+    });
 </script>
 </body>
 </html>
