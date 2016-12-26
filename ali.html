@@ -1,6 +1,6 @@
 <div  style="position: absolute;z-index: 10px;">
         <input type="file" id="getfileinput">
-        <div>ÉÏÏÂ¼üÀ´µ÷ÕûÍ¼Æ¬Î»ÖÃ£º</div>
+        <div>ä¸Šä¸‹é”®æ¥è°ƒæ•´å›¾ç‰‡ä½ç½®ï¼š</div>
     </div>
     <div id="checkimg" style="position: relative;top:50px;height: 900px;width:450px;overflow: hidden;background-size: contain;background-repeat:no-repeat;background-position: 0 -200px;">
         <img style="position: absolute;left:0;top:-200px;mix-blend-mode: screen;" src="" width="450">
@@ -9,7 +9,7 @@
     var obj = document.querySelector('#checkimg'),
         oimg = obj.querySelector('img'),
         bgposy = -200;
-    // ¼ÓÔØÍ¼Æ¬
+    // åŠ è½½å›¾ç‰‡
     document.querySelector('#getfileinput').addEventListener('change',function(){
         // console.log('change');
         var that = this,filereader;
@@ -25,14 +25,14 @@
         }
     },false);
   
-    // µ÷Õû
+    // è°ƒæ•´
     document.addEventListener('keydown',function(e){
         e.stopPropagation();
         switch(e.keyCode){
-            case 38: //ÉÏ
+            case 38: //ä¸Š
                 ++bgposy;
             break;
-            case 40: //ÏÂ
+            case 40: //ä¸‹
                 bgposy = bgposy =0?0:--bgposy;
             break;
         }
